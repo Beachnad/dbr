@@ -14,7 +14,7 @@ mode(x, tie = c("first", "last", "random"), na.rm = FALSE)
 \item{na.rm}{Boolean, remove NA elements before evaluating}
 }
 \value{
-mode of \code(x)
+mode of x
 }
 \description{
 Given an array, will find the most common element, or mode.

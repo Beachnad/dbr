@@ -5,7 +5,7 @@
 #' @param x List of elements
 #' @param tie String of how to handle ties
 #' @param na.rm Boolean, remove NA elements before evaluating
-#' @return mode of \code(x)
+#' @return mode of x
 #' @export
 #' @examples
 #'
@@ -16,6 +16,7 @@
 #' for (i in 1:10){
 #'   print(mode(x0, tie='random'))
 #' }
+
 mode <- function(x, tie=c('first', 'last', 'random'), na.rm=FALSE) {
   tie <- tie[1]
   if (na.rm){
