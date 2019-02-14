@@ -4,23 +4,23 @@ require(ggplot2)
 #'
 #' Provides a clean, light theme, aesthetic for ggplot
 #' @param base_size Size of text. Defaults to 11
-#' @param labs Include y and x axis labels? Defaults to FALSE
+#' @param base_family Font family. Defaults to Open Sans
+#' @param base_line_size Line size
+#' @param base_rect_size Size of rectangles
+#' @family theme
 #' @export
 #' @examples
-#' df <- data.frame(
-#'   a = seq(1, 10),
-#'   b = seq(1, 10)
-#' )
+#' library(datasets)
+#' data(iris)
 #'
-#' ggplot(df, aes(x=a, y=b)) +
-#'   geom_bar(stat='identity') +
-#'   labs(title="Plot Title",
-#'        subtitle='Plot Subtitle',
-#'        y="y Axis Label",
-#'        x="x Axis Label",
-#'        caption="Plot caption") +
-#'   db_light_theme(base_size = 11, base_family = 'Open Sans') +
-#'   scale_fill_brewer(palette = 'Set1')
+#' ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length, color=Species)) +
+#'   geom_point() +
+#'   labs(title="Sepal Height vs. Sepal Width",
+#'        subtitle='Iris Dataset',
+#'        caption="Iris dataset is well-known. This makes it easy to easy to plot.") +
+#'   scale_color_brewer(palette="Set1") +
+#'   db_light_theme(base_size = 11, base_family = 'Open Sans') %+replace%
+#'   theme(legend.position = 'right')
 
 db_light_theme <- function(base_size = 12,
                            base_family = "Open Sans",
@@ -47,6 +47,29 @@ db_light_theme <- function(base_size = 12,
           strip.switch.pad.grid = unit(0.1, "cm"),
           strip.switch.pad.wrap = unit(0.1, "cm"))
 }
+
+#' Clean Dark Theme for ggplot
+#'
+#' Provides a clean, dark theme, aesthetic for ggplot
+#' @param base_size Size of text. Defaults to 11
+#' @param base_family Font family. Defaults to Open Sans
+#' @param base_line_size Line size
+#' @param base_rect_size Size of rectangles
+#' @param
+#' @family theme
+#' @export
+#' @examples
+#' library(datasets)
+#' data(iris)
+#'
+#' ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length, color=Species)) +
+#'   geom_point() +
+#'   labs(title="Sepal Height vs. Sepal Width",
+#'        subtitle='Iris Dataset',
+#'        caption="Iris dataset is well-known. This makes it easy to easy to plot.") +
+#'   scale_color_brewer(palette="Spectral") +
+#'   db_dark_theme(base_size = 11, base_family = 'Open Sans') %+replace%
+#'   theme(legend.position = 'right')
 
 db_dark_theme <- function(base_size = 12,
                           base_family = "Open Sans",
