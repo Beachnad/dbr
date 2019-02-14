@@ -1,0 +1,13 @@
+Package: dbr
+Title: Personal R Package
+Version: 0.0.1
+Authors@R: 
+    person(given = "Danny",
+           family = "Beachnau",
+           role = c("aut", "cre"),
+           email = "DannyBeachnau@gmail.com")
+Description: Contains helper functions common among my r Projects. These functions includes custom ggplot themes I like, a mode function, and colors.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1.9000
