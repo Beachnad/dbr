@@ -55,7 +55,6 @@ db_light_theme <- function(base_size = 12,
 #' @param base_family Font family. Defaults to Open Sans
 #' @param base_line_size Line size
 #' @param base_rect_size Size of rectangles
-#' @param
 #' @family theme
 #' @export
 #' @examples
