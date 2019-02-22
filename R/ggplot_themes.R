@@ -17,7 +17,7 @@ require(ggplot2)
 #'   geom_point() +
 #'   labs(title="Sepal Height vs. Sepal Width",
 #'        subtitle='Iris Dataset',
-#'        caption="Iris dataset is well-known. This makes it easy to easy to plot.") +
+#'        caption="The iris dataset is well-known and common amongst new R learners.") +
 #'   scale_color_brewer(palette="Set1") +
 #'   db_light_theme(base_size = 11, base_family = 'Open Sans') %+replace%
 #'   theme(legend.position = 'right')
@@ -38,7 +38,6 @@ db_light_theme <- function(base_size = 12,
           axis.title = element_text(family = base_family, size=rel(0.9)),
           axis.ticks = element_blank(),
           axis.text = element_text(size = rel(0.9), color = "gray10"),
-          legend.position = "none",
           axis.line.y.left = element_line(colour = "black"),
           axis.line.x.bottom = element_line(colour = "black"),
           plot.caption = element_text(size = rel(0.8), color = '#656565', vjust = -1.2, hjust = 0),
@@ -65,7 +64,7 @@ db_light_theme <- function(base_size = 12,
 #'   geom_point() +
 #'   labs(title="Sepal Height vs. Sepal Width",
 #'        subtitle='Iris Dataset',
-#'        caption="Iris dataset is well-known. This makes it easy to easy to plot.") +
+#'        caption="The iris dataset is well-known and common amongst new R learners.") +
 #'   scale_color_brewer(palette="Spectral") +
 #'   db_dark_theme(base_size = 11, base_family = 'Open Sans') %+replace%
 #'   theme(legend.position = 'right')
