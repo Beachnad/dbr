@@ -27,7 +27,7 @@ ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length, color=Species)) +
   geom_point() +
   labs(title="Sepal Height vs. Sepal Width",
        subtitle='Iris Dataset',
-       caption="Iris dataset is well-known. This makes it easy to easy to plot.") +
+       caption="The iris dataset is well-known and common amongst new R learners.") +
   scale_color_brewer(palette="Spectral") +
   db_dark_theme(base_size = 11, base_family = 'Open Sans') \%+replace\%
   theme(legend.position = 'right')
