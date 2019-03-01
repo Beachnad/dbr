@@ -44,7 +44,8 @@ db_light_theme <- function(base_size = 12,
           strip.background = element_rect(fill = "grey85", colour = "grey20"),
           strip.text = element_text(colour = "grey10", size = rel(0.8), margin = margin(0.8 * half_line, 0.8 * half_line, 0.8 * half_line, 0.8 * half_line), face='bold'),
           strip.switch.pad.grid = unit(0.1, "cm"),
-          strip.switch.pad.wrap = unit(0.1, "cm"))
+          strip.switch.pad.wrap = unit(0.1, "cm"),
+          legend.position = 'right')
 }
 
 #' Clean Dark Theme for ggplot
