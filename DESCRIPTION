@@ -1,6 +1,6 @@
 Package: dbr
 Title: Personal R Package
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: 
     person(given = "Danny",
            family = "Beachnau",
