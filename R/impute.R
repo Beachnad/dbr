@@ -15,7 +15,7 @@
 #' df %>% impute(a = mean(a, na.rm=TRUE))
 #' df %>% impute(a = mean(b))
 #' df %>% impute(a = sum(b[a > 3], na.rm=T))
-#'
+#'@export
 impute <- function(.data, ...){
 
   stopifnot(is.data.frame(.data) || is.list(.data) || is.environment(.data))
@@ -43,6 +43,7 @@ impute <- function(.data, ...){
 #' Imputes Missing Values and Replaces with Column Mean
 #'
 #' Function is created in the style of dplyr! Huray!
+#' @export
 impute_mean <-function(.data, ...){
   cols <- as.character(substitute(alist(...)))[-1]
   for (c in cols){
@@ -55,6 +56,7 @@ impute_mean <-function(.data, ...){
 #' Imputes Missing Values and Replaces with Column Median
 #'
 #' Function is created in the style of dplyr! Huray!
+#' @export
 impute_median <-function(.data, ...){
   cols <- as.character(substitute(alist(...)))[-1]
   for (c in cols){

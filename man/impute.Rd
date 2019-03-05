@@ -22,5 +22,4 @@ df <- data.frame(
 df \%>\% impute(a = mean(a, na.rm=TRUE))
 df \%>\% impute(a = mean(b))
 df \%>\% impute(a = sum(b[a > 3], na.rm=T))
-
 }

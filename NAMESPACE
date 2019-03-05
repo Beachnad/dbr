@@ -3,4 +3,7 @@
 export(db_colors)
 export(db_dark_theme)
 export(db_light_theme)
+export(impute)
+export(impute_mean)
+export(impute_median)
 export(mode)
