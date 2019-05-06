@@ -11,7 +11,7 @@ map_values(x, map, if_null = NULL)
 
 \item{map}{Named list}
 
-\item{if_null}{Value to use if not present in \code(map), if
+\item{if_null}{Value to use if not present in map, if
 if_null == NULL, then the missing values will be
 omitted.}
 }
