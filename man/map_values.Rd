@@ -16,7 +16,7 @@ if_null == NULL, then the missing values will be
 omitted.}
 }
 \value{
-mode of x
+array of mapped values
 }
 \description{
 Given an array and a named list, maps values from the array

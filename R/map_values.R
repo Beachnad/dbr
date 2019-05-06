@@ -8,7 +8,7 @@
 #' @param if_null Value to use if not present in \code(map), if
 #'                if_null == NULL, then the missing values will be
 #'                omitted.
-#' @return mode of x
+#' @return array of mapped values
 #' @export
 #' @examples
 #'
@@ -22,3 +22,18 @@ map_values <- function(x, map, if_null=NULL){
   x1[is.na(names(x1))] <- if_null
   array(unlist(x1))
 }
+
+#' Get values from named list
+#'
+#' Given a names list, returns an array of just the values.
+#' Analagous to the names function.
+#'
+#' @param x Named list
+#' @return Values of x as an array
+#' @export
+#' @examples
+#'
+#' x <- list('apples'=2, 'oranges'=4)
+#' values(x)
+#'
+values <- function(x){array(unlist(x))}
