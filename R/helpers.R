@@ -3,4 +3,4 @@
 #' not version of the %in% infix
 #'@export
 
-'%!in%' <- function(x,y){!('%in%'(x,y))}
+'%not_in%' <- function(x,y){!('%in%'(x,y))}
