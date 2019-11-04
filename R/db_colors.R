@@ -43,3 +43,16 @@ db_colors <- function(set=c('basic', 'procare','CCalt', 'sex')){
          CCalt=CCalt,
          sex=sex)
 }
+
+neon <- function(x=c(
+  'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink'
+)){
+  switch(match.arg(x),
+         red='#ff0000',
+         orange='#ffbb00',
+         yellow='#fff200',
+         green='#00ff08',
+         blue='#00f7ff',
+         purple='#e854ff',
+         pink='#ffa6f2')
+}
