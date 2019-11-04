@@ -57,19 +57,3 @@ join_as_of <- function(left_df, right_df, on, left_time, right_time, direction='
 
   AOJ
 }
-
-
-
-A <- data.frame(
-  id = c(1, 2, 3),
-  a_time = as.Date(c("2017-02-02", "2017-04-28", "2017-05-05"))
-)
-
-B <- data.frame(
-  id = c(1, 1, 1, 2, 2),
-  units = c(100, 204, 222, 1054, 12),
-  b_time = as.Date(c("2017-02-01", "2017-02-05", "2017-02-04", "2017-07-01", "2017-10-01"))
-)
-library(dplyr)
-
-join_as_of(A, B, 'id', 'a_time', 'b_time', c(-2, -4)) %>% print()
